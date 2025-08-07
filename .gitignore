@@ -28,3 +28,64 @@ public class Staticclass {
 	}
 
 }
+<--------------END
+
+------------->START
+NOTE : for example we have to calculate simple interest (p*t*r)/100  in r is rate that is 15.2f r is common variable so we have to initialize the r is static float r = 15.2f
+we can initialize r should be first or in static block. we have to reduce bytes.
+
+
+package com.Static;
+import java.util.Scanner;
+
+class Businessman {
+	float si;
+	float p;
+	float t;
+	static float r;
+	
+	static {
+		r = 15.2f;
+	}
+	
+	public void inputAcceptance() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter the principle amount: ");
+		p = scan.nextInt();
+		System.out.println("Enter the tenure : ");
+		t = scan.nextInt();
+	}
+	
+	public void calcInterest() {
+		si = (p*t*r)/100;
+	}
+	
+	public void display() {
+		System.out.println(si);
+	}
+}
+
+
+public class StaticCommonVariable {
+	public static void main(String[] args) {
+		Businessman b1 = new Businessman();
+		b1.inputAcceptance();
+		b1.calcInterest();
+		b1.display();
+		
+		Businessman b2 =new Businessman();
+		b2.inputAcceptance();
+		b2.calcInterest();
+		b2.display();
+		
+		Businessman b3 = new Businessman();
+		b3.inputAcceptance();
+		b3.calcInterest();
+		b3.display();
+		
+	}
+
+}
+
+
+
