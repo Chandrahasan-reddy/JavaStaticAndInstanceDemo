@@ -22,3 +22,41 @@ Inside static method.
 Inside instance block.
 Inside constructor.
 Inside instance method.
+
+<-----------END
+
+------------>START
+
+# JavaStaticVariableInterestCalculator
+
+This Java project demonstrates how to use a `static` variable as a common shared resource across multiple objects—in this case, to calculate **Simple Interest (SI)** for different businessmen using a fixed rate of interest.
+
+## 💡 Key Concepts Demonstrated
+
+- Use of `static` variables for shared values (interest rate).
+- Object-oriented programming (OOP) concepts.
+- Simple user input using `Scanner`.
+- Basic formula-based calculations in Java.
+- Reusability of class methods across multiple objects.
+
+## 🧮 Simple Interest Formula
+
+\[
+Simple Interset(pi) = (p*t*r)/100
+\]
+
+Where:  
+- **P** = Principal amount  
+- **T** = Time (in years)  
+- **R** = Rate of interest (common for all instances, declared `static`)
+
+-----------------OUTPUT------------------
+Enter the principle amount: 50000
+Enter the tenure : 2
+15200.0
+Enter the principle amount: 100000
+Enter the tenure : 2
+30400.0
+Enter the principle amount: 150000
+Enter the tenure : 2
+45600.0
